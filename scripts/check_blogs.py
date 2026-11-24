@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BLOG_KEYS = {"id", "name", "category", "site_url", "feeds", "exclude_categories", "exclude_urls", "enabled"}
+BLOG_KEYS = {"id", "name", "category", "site_url", "feeds", "include_categories", "exclude_categories", "exclude_urls", "enabled"}
 CAT_KEYS = {"id", "name", "order"}
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 URL_RE = re.compile(r"^https?://\S+$")
@@ -69,7 +69,7 @@ def validate(bundle):
         feeds = b.get("feeds")
         if not str_list(feeds) or not feeds or not all(URL_RE.match(f) for f in feeds):
             errs.append(f"{where}: feeds は [\"https://...\"] の形で1本以上書いてください")
-        for k in ("exclude_categories", "exclude_urls"):
+        for k in ("include_categories", "exclude_categories", "exclude_urls"):
             if k in b and not (b[k] == [] or str_list(b[k])):
                 errs.append(f"{where}: {k} は [\"語\", \"語\"] の形にしてください（空なら []）")
         if "enabled" in b and not isinstance(b["enabled"], bool):

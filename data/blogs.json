@@ -1,7 +1,15 @@
 {
  "categories": [
-  {"id": "apple", "name": "Apple系", "order": 1},
-  {"id": "food", "name": "飲食レビュー系", "order": 2}
+  {
+   "id": "apple",
+   "name": "Apple系",
+   "order": 1
+  },
+  {
+   "id": "food",
+   "name": "飲食レビュー系",
+   "order": 2
+  }
  ],
  "blogs": [
   {
@@ -22,41 +30,62 @@
    "name": "ゴリミー",
    "category": "apple",
    "site_url": "https://gori.me/",
-   "feeds": ["https://gori.me/feed"],
-   "exclude_categories": ["セール"]
+   "feeds": [
+    "https://gori.me/feed"
+   ],
+   "exclude_categories": [
+    "セール"
+   ]
   },
   {
    "id": "iphone-mania",
    "name": "iPhone Mania",
    "category": "apple",
    "site_url": "https://iphone-mania.jp/",
-   "feeds": ["https://iphone-mania.jp/feed/"],
-   "exclude_categories": []
+   "feeds": [
+    "https://iphone-mania.jp/feed/"
+   ],
+   "exclude_categories": [
+    "整備済"
+   ]
   },
   {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",
    "site_url": "https://netaful.jp/",
-   "feeds": ["https://netaful.jp/tag/pickup/feed"],
-   "exclude_categories": ["家電"]
+   "feeds": [
+    "https://netaful.jp/tag/pickup/feed"
+   ],
+   "exclude_categories": [
+    "家電"
+   ]
   },
   {
    "id": "shingeki",
    "name": "進撃のグルメ",
    "category": "food",
    "site_url": "https://shingekifood.com/",
-   "feeds": ["https://shingekifood.com/feed"],
-   "exclude_categories": []
+   "feeds": [
+    "https://shingekifood.com/feed"
+   ],
+   "exclude_categories": [],
+   "include_categories": [
+    "正直レビュー"
+   ]
   },
   {
    "id": "supersalariedman",
    "name": "コンビニ・サラリーマン総研",
    "category": "food",
    "site_url": "https://supersalariedman.blogspot.com/",
-   "feeds": ["https://supersalariedman.blogspot.com/feeds/posts/default?alt=rss"],
+   "feeds": [
+    "https://supersalariedman.blogspot.com/feeds/posts/default?alt=rss"
+   ],
    "exclude_categories": [],
-   "exclude_urls": ["https://supersalariedman.blogspot.com/2019/06/blog-post.html"]
+   "exclude_urls": [
+    "https://supersalariedman.blogspot.com/2019/06/blog-post.html"
+   ]
   }
  ]
 }
