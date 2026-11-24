@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BLOG_KEYS = {"id", "name", "category", "site_url", "feeds", "include_categories", "exclude_categories", "exclude_urls", "enabled"}
+BLOG_KEYS = {"id", "name", "category", "site_url", "feeds", "include_categories", "exclude_categories", "exclude_urls", "title_suffix", "enabled"}
 CAT_KEYS = {"id", "name", "order"}
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 URL_RE = re.compile(r"^https?://\S+$")
@@ -72,6 +72,8 @@ def validate(bundle):
         for k in ("include_categories", "exclude_categories", "exclude_urls"):
             if k in b and not (b[k] == [] or str_list(b[k])):
                 errs.append(f"{where}: {k} は [\"語\", \"語\"] の形にしてください（空なら []）")
+        if "title_suffix" in b and not (isinstance(b["title_suffix"], str) and b["title_suffix"].strip()):
+            errs.append(f"{where}: title_suffix は落としたい文字列を \"…\" で書いてください")
         if "enabled" in b and not isinstance(b["enabled"], bool):
             errs.append(f"{where}: enabled は true か false（引用符なし）にしてください")
     return errs

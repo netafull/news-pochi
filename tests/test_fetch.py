@@ -333,3 +333,32 @@ class IncludeTest(unittest.TestCase):
         b["include_categories"] = []
         arts, _, _ = ff.run(cfg(), bundle(b), F(), [], {}, now)
         self.assertEqual(len(arts), 1)
+
+
+class TitleSuffixTest(unittest.TestCase):
+    def test_strip_suffix(self):
+        self.assertEqual(ff.strip_suffix("新作おにぎり｜キャプテン福田", "｜キャプテン福田"), "新作おにぎり")
+        self.assertEqual(ff.strip_suffix("途中に｜キャプテン福田がある記事", "｜キャプテン福田"), "途中に｜キャプテン福田がある記事")
+        self.assertEqual(ff.strip_suffix("｜キャプテン福田", "｜キャプテン福田"), "｜キャプテン福田")
+        self.assertEqual(ff.strip_suffix("そのまま", ""), "そのまま")
+
+    def test_applies_to_fresh_and_saved(self):
+        now = datetime.datetime(2026, 11, 24, 6, 0, tzinfo=datetime.timezone.utc)
+        rss = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>新しい記事｜キャプテン福田</title><link>https://ex.com/n</link><pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate></item>
+</channel></rss>"""
+
+        class F:
+            def get(self, url):
+                return rss.encode("utf-8")
+
+        b = blog("b", ["https://ex.com/feed"])
+        b["title_suffix"] = "｜キャプテン福田"
+        other = blog("o", ["https://ex.com/feed2"])
+        saved = [art("https://ex.com/old", "b", "2026-11-23T00:00:00Z", title="古い記事｜キャプテン福田"),
+                 art("https://ex.com/x", "o", "2026-11-23T00:00:00Z", title="別ブログ｜キャプテン福田")]
+        arts, _, _ = ff.run(cfg(), bundle(b, other), F(), saved, {}, now)
+        titles = {a["url"]: a["title"] for a in arts}
+        self.assertEqual(titles["https://ex.com/n"], "新しい記事")
+        self.assertEqual(titles["https://ex.com/old"], "古い記事")
+        self.assertEqual(titles["https://ex.com/x"], "別ブログ｜キャプテン福田")  # 他ブログには効かない
