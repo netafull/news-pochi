@@ -269,6 +269,9 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
     """取得して (articles, status, public_blogs) を返す。ファイルには書かない。"""
     blogs = bundle["blogs"]
     fresh, status = {}, {}
+    # 絞り込み・除外で落とした記事URL。ルールを足す前に保存済みの同じ記事も、今回のフィードに
+    # 載っていればすぐ消す（フィードから外れた古い記事は7日切りで自然に消える）
+    dropped = set()
     # URL指定の除外（固定記事など）。取得分にも保存済みの記事にも効かせる
     skip_urls = {b["id"]: {normalize_url(u) for u in b.get("exclude_urls", [])} for b in blogs}
     existing_articles = [a for a in (existing_articles or [])
@@ -284,8 +287,11 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
                 continue
             ok_count += 1
             for r in raw:
-                if is_excluded(r["categories"], b.get("exclude_categories", [])) or r["url"] in skip_urls[b["id"]]:
+                include = b.get("include_categories") or []
+                if (include and not is_excluded(r["categories"], include)) \
+                        or is_excluded(r["categories"], b.get("exclude_categories", [])) or r["url"] in skip_urls[b["id"]]:
                     excluded += 1
+                    dropped.add(r["url"])
                     continue
                 pub = r["published"] or now
                 if pub > now + datetime.timedelta(days=1):
@@ -308,6 +314,7 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
             "excluded": excluded,
             "with_image": sum(1 for a in uniq if a["image"]),
         }
+    existing_articles = [a for a in existing_articles if normalize_url(a.get("url", "")) not in dropped]
     articles = merge(blogs, fresh, existing_articles, now, config.get("retention_days", 7))
     public = {
         "categories": sorted(bundle["categories"], key=lambda c: c["order"]),

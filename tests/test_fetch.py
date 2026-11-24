@@ -296,3 +296,40 @@ class ExcludeUrlTest(unittest.TestCase):
         arts, status, _ = ff.run(cfg(), bundle(b), F(), saved, {}, now)
         self.assertEqual([a["url"] for a in arts], ["https://ex.com/normal"])
         self.assertEqual(status["blogs"]["b"]["excluded"], 1)
+
+
+class IncludeTest(unittest.TestCase):
+    def test_include_then_exclude(self):
+        now = datetime.datetime(2026, 11, 24, 6, 0, tzinfo=datetime.timezone.utc)
+        rss = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>a</title><link>https://ex.com/a</link><category>正直レビュー</category><pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate></item>
+<item><title>b</title><link>https://ex.com/b</link><category>新商品情報</category><pubDate>Tue, 24 Nov 2026 04:00:00 +0000</pubDate></item>
+<item><title>c</title><link>https://ex.com/c</link><category>正直レビュー</category><category>PR</category><pubDate>Tue, 24 Nov 2026 03:00:00 +0000</pubDate></item>
+<item><title>d</title><link>https://ex.com/d</link><pubDate>Tue, 24 Nov 2026 02:00:00 +0000</pubDate></item>
+</channel></rss>"""
+
+        class F:
+            def get(self, url):
+                return rss.encode("utf-8")
+
+        b = blog("b", ["https://ex.com/feed"], exclude=["PR"])
+        b["include_categories"] = ["正直"]
+        saved = [art("https://ex.com/b", "b", "2026-11-24T04:00:00Z")]  # ルールを足す前に保存された記事
+        arts, status, _ = ff.run(cfg(), bundle(b), F(), saved, {}, now)
+        self.assertEqual([a["url"] for a in arts], ["https://ex.com/a"])
+        self.assertEqual(status["blogs"]["b"]["excluded"], 3)
+
+    def test_no_include_passes_all(self):
+        now = datetime.datetime(2026, 11, 24, 6, 0, tzinfo=datetime.timezone.utc)
+        rss = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>d</title><link>https://ex.com/d</link><pubDate>Tue, 24 Nov 2026 02:00:00 +0000</pubDate></item>
+</channel></rss>"""
+
+        class F:
+            def get(self, url):
+                return rss.encode("utf-8")
+
+        b = blog("b", ["https://ex.com/feed"])
+        b["include_categories"] = []
+        arts, _, _ = ff.run(cfg(), bundle(b), F(), [], {}, now)
+        self.assertEqual(len(arts), 1)
