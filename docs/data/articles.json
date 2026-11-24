@@ -1,6 +1,46 @@
 {
- "generated": "2026-11-24T21:45:11Z",
+ "generated": "2026-11-24T22:45:19Z",
  "articles": [
+  {
+   "url": "https://gori.me/macosx/macosx-news/173057",
+   "title": "macOS 27.2.1で外部ディスプレイ不具合。切れたり、1280×720に固定の報告。原因はケーブルの可能性も",
+   "blog": "gorime",
+   "published": "2026-11-24T22:35:30Z",
+   "summary": "macOS 27.2〜27.2.1で、外部ディスプレイが映ったり消えたり、1280×720に固定されたりする報告が海外フォーラムに出ている。USB-C経由の接続で目立つが、Appleの言及は確認できず、原因もOSと決まっていない。報告された…",
+   "image": "https://gori.me/uploads/2026/04/Gorime-new-desksetup-with-Caldigit-TS5Plus-and-TS4-Review-06-800x534.jpg"
+  },
+  {
+   "url": "https://shingekifood.com/entry/2026/11/25/071644",
+   "title": "【マクドナルド】グラコロの新作”ボロネーゼ”を実食！「バターでこってり」「濃厚な旨み」「ふんわり蒸しバンズ」",
+   "blog": "shingeki",
+   "published": "2026-11-24T22:16:44Z",
+   "summary": "【進撃のグルメ】マクドナルド「コク旨ボロネーゼグラコロ」 毎日、進撃の正直レビューをお届けします。 2026年11月25日（水）より、マクドナルドが「グラコロ」シリーズを発売します。 冬の風物詩、定番「グラコロ」に加え、新作「コク旨ボロネー…",
+   "image": "https://cdn.image.st-hatena.com/image/scale/4d72236239c562191f618399068c01d8637fe619/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fshingeki_food%2F20261125%2F20261125071334.jpg"
+  },
+  {
+   "url": "https://gori.me/apple/apple-news/173056",
+   "title": "Appleの(PRODUCT)RED新製品、近々怒濤の発表か。バンドやリストストラップ、限定AirTagの情報も",
+   "blog": "gorime",
+   "published": "2026-11-24T22:15:20Z",
+   "summary": "Bloombergの Mark Gurman氏が、赤いAirPods Wrist Strapと赤いApple Watch Sport Bandも開発済みとXに投稿した。Appleは12月1日前後に(PRODUCT)RED製品を投入するとされ…",
+   "image": "https://gori.me/uploads/2018/11/PRODUCT-RED-Sports-Loop-Apple-Watch-05-723x482.jpg"
+  },
+  {
+   "url": "https://conmeshi.com/post-287666/",
+   "title": "ソーセージたまご揚げパン【セブンイレブン】相性抜群の組み合わせです!!",
+   "blog": "inukichi",
+   "published": "2026-11-24T22:00:00Z",
+   "summary": "【商品紹介】 セブンイレブンの商品「ソーセージたまご揚げパン」を食べてみました。 パン粉を付けて揚げたジューシーなパンに、ソーセージを挟み相性の良いケチャップとたまごサラダを絞った仕立てです。 228円（税込246.24 […]",
+   "image": "http://conmeshi.com/wp-content/uploads/2026/11/2026111368-7.jpg"
+  },
+  {
+   "url": "https://gori.me/iphone/iphone-news/173054",
+   "title": "iPhone 18e、魅力の“スッキリ背面デザイン”卒業でiPad Pro風のカメラに？18とAir 2はカメラ厚みアップの噂",
+   "blog": "gorime",
+   "published": "2026-11-24T21:45:18Z",
+   "summary": "Engadgetが米国時間11月23日に、供給網の情報源から得たCADを見たと報じた。iPhone 18eは背面カメラ、LEDフラッシュ、マイクが約28×35mmの1つの台座にまとまる設計という。iPhone 18とAir 2のカメラ部は3…",
+   "image": "https://gori.me/uploads/2020/03/ipad-pro-2020-vs-2018-01-800x533.jpg"
+  },
   {
    "url": "https://conmeshi.com/post-287669/",
    "title": "手包みロールキャベツ入りポトフ【セブンイレブン】食べ応えある美味しいポトフです!!",
@@ -1231,14 +1271,6 @@
    "blog": "netaful-apple",
    "published": "2026-11-17T23:00:00Z",
    "summary": "9to5Macによると、同サイトの記者が「iPhone Duo」を約2週間使った末に、返品を決めたと明かしました。製品が悪いのではなく、自分には合わなかったという3つの理由を挙げています。 「iPhone Duo」が合わ... 投稿 「iP…",
-   "image": "https://netaful.jp/wp-content/uploads/2026/09/Apple-iPhone-Duo-colors-260909-485x273.jpg"
-  },
-  {
-   "url": "https://netaful.jp/iphone/0212816.html",
-   "title": "「iPhone Duo」対応アプリが20万本を突破｜10万本から約10日で倍増",
-   "blog": "netaful-apple",
-   "published": "2026-11-17T22:30:00Z",
-   "summary": "MacRumorsによると、Appleは折りたたみの「iPhone Duo」に最適化されたアプリが20万本を超えたと発表しました。 「iPhone Duo」対応アプリが20万本を突破 Appleのマーケティング責任者であ... 投稿 「iP…",
    "image": "https://netaful.jp/wp-content/uploads/2026/09/Apple-iPhone-Duo-colors-260909-485x273.jpg"
   }
  ]
