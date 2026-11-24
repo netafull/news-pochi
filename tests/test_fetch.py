@@ -276,3 +276,23 @@ class FetcherTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExcludeUrlTest(unittest.TestCase):
+    def test_exclude_urls_drops_fresh_and_saved(self):
+        now = datetime.datetime(2026, 11, 24, 6, 0, tzinfo=datetime.timezone.utc)
+        rss = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>固定</title><link>https://ex.com/pinned?utm_source=x</link><pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate></item>
+<item><title>普通</title><link>https://ex.com/normal</link><pubDate>Tue, 24 Nov 2026 04:00:00 +0000</pubDate></item>
+</channel></rss>"""
+
+        class F:
+            def get(self, url):
+                return rss.encode("utf-8")
+
+        b = blog("b", ["https://ex.com/feed"])
+        b["exclude_urls"] = ["https://ex.com/pinned"]
+        saved = [art("https://ex.com/pinned", "b", "2026-11-23T00:00:00Z")]
+        arts, status, _ = ff.run(cfg(), bundle(b), F(), saved, {}, now)
+        self.assertEqual([a["url"] for a in arts], ["https://ex.com/normal"])
+        self.assertEqual(status["blogs"]["b"]["excluded"], 1)

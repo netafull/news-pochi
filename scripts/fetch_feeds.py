@@ -269,6 +269,10 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
     """取得して (articles, status, public_blogs) を返す。ファイルには書かない。"""
     blogs = bundle["blogs"]
     fresh, status = {}, {}
+    # URL指定の除外（固定記事など）。取得分にも保存済みの記事にも効かせる
+    skip_urls = {b["id"]: {normalize_url(u) for u in b.get("exclude_urls", [])} for b in blogs}
+    existing_articles = [a for a in (existing_articles or [])
+                         if normalize_url(a.get("url", "")) not in skip_urls.get(a.get("blog"), set())]
     for b in blogs:
         prev = (old_status or {}).get("blogs", {}).get(b["id"], {})
         errors, ok_count, kept, excluded, imgs = [], 0, [], 0, 0
@@ -280,7 +284,7 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
                 continue
             ok_count += 1
             for r in raw:
-                if is_excluded(r["categories"], b.get("exclude_categories", [])):
+                if is_excluded(r["categories"], b.get("exclude_categories", [])) or r["url"] in skip_urls[b["id"]]:
                     excluded += 1
                     continue
                 pub = r["published"] or now

@@ -38,7 +38,7 @@
    "name": "ネタフル",
    "category": "food",
    "site_url": "https://netaful.jp/",
-   "feeds": ["https://netaful.jp/eat/feed"],
+   "feeds": ["https://netaful.jp/tag/pickup/feed"],
    "exclude_categories": []
   },
   {
@@ -55,7 +55,8 @@
    "category": "food",
    "site_url": "https://supersalariedman.blogspot.com/",
    "feeds": ["https://supersalariedman.blogspot.com/feeds/posts/default?alt=rss"],
-   "exclude_categories": []
+   "exclude_categories": [],
+   "exclude_urls": ["https://supersalariedman.blogspot.com/2019/06/blog-post.html"]
   }
  ]
 }
