@@ -72,8 +72,9 @@ def validate(bundle):
         for k in ("include_categories", "exclude_categories", "exclude_urls"):
             if k in b and not (b[k] == [] or str_list(b[k])):
                 errs.append(f"{where}: {k} は [\"語\", \"語\"] の形にしてください（空なら []）")
-        if "title_suffix" in b and not (isinstance(b["title_suffix"], str) and b["title_suffix"].strip()):
-            errs.append(f"{where}: title_suffix は落としたい文字列を \"…\" で書いてください")
+        ts = b.get("title_suffix")
+        if "title_suffix" in b and not ((isinstance(ts, str) and ts.strip()) or (str_list(ts) and ts)):
+            errs.append(f"{where}: title_suffix は落としたい文字列を \"…\" か [\"…\", \"…\"] で書いてください")
         if "enabled" in b and not isinstance(b["enabled"], bool):
             errs.append(f"{where}: enabled は true か false（引用符なし）にしてください")
     return errs

@@ -236,9 +236,11 @@ def parse_feed(data):
 
 
 def strip_suffix(title, suffix):
-    """タイトル末尾の決まった文字列（例: 「｜キャプテン福田」）を落とす。落とすと空になるなら元のまま。"""
-    if suffix and title.endswith(suffix) and title[:-len(suffix)].strip():
-        return title[:-len(suffix)].rstrip()
+    """タイトル末尾の決まった文字列（例: 「｜キャプテン福田」）を落とす。suffix は文字列か文字列の配列で、
+    配列なら前から順に試して最初に一致したものを落とす（長いものを先に書く）。落とすと空になるなら元のまま。"""
+    for s in ([suffix] if isinstance(suffix, str) else (suffix or [])):
+        if s and title.endswith(s) and title[:-len(s)].strip():
+            return title[:-len(s)].rstrip()
     return title
 
 
