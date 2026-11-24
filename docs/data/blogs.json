@@ -37,6 +37,12 @@
    "site_url": "https://www.macotakara.jp/"
   },
   {
+   "id": "taisy0",
+   "name": "気になる、記になる…",
+   "category": "apple",
+   "site_url": "https://taisy0.com/"
+  },
+  {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",
@@ -53,6 +59,12 @@
    "name": "コンビニ・サラリーマン総研",
    "category": "food",
    "site_url": "https://supersalariedman.blogspot.com/"
+  },
+  {
+   "id": "inukichi",
+   "name": "いぬきちのコンビニ飯",
+   "category": "food",
+   "site_url": "https://conmeshi.com/"
   }
  ]
 }
