@@ -69,6 +69,13 @@
    "category": "food",
    "site_url": "https://conmeshi.com/",
    "yomi": "いぬきちのこんびにめし"
+  },
+  {
+   "id": "amaikeiki",
+   "name": "あまいけいき",
+   "category": "food",
+   "site_url": "https://ameblo.jp/sweets-minister/",
+   "yomi": "あまいけいき"
   }
  ]
 }
