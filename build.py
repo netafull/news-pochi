@@ -11,10 +11,10 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DOCS = ROOT / "docs"
 
-TITLE = "ニュースポチ｜ブログの新着を、系統別にまとめて読む"
+TITLE = "ニュースポチ｜ブログの新着を、まとめて読む"
 NAME = "ニュースポチ"
-TAGLINE = "ブログの新着を、系統別にまとめて読む"
-DESC = ("ニュース系ブログのRSSを系統別にまとめて読めるサイト。Apple系・飲食レビュー系のブログの新着を、"
+TAGLINE = "ブログの新着を、まとめて読む"
+DESC = ("ニュース系ブログのRSSをまとめて読めるサイト。Apple系・飲食レビュー系のブログの新着を、"
         "新しい順の1本のタイムラインで。読みたいブログだけを購読リストで選べます。")
 DOMAIN = "news.netaful.jp"
 

@@ -47,7 +47,7 @@ class BuildTest(unittest.TestCase):
 
     def test_head(self):
         idx, _ = render()
-        self.assertIn("<title>ニュースポチ｜ブログの新着を、系統別にまとめて読む</title>", idx)
+        self.assertIn("<title>ニュースポチ｜ブログの新着を、まとめて読む</title>", idx)
         self.assertIn('<link rel="canonical" href="https://news.netaful.jp/">', idx)
         for s in ('property="og:image" content="https://news.netaful.jp/assets/ogp.jpg"', "/assets/favicon.png",
                   "/assets/apple-touch-icon.png", 'name="description"'):
