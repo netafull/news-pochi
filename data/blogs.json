@@ -11,7 +11,7 @@
    "order": 2
   }
  ],
- "blogs": [
+ "blogs": [  
   {
    "id": "netaful-apple",
    "name": "ネタフル",
@@ -62,6 +62,18 @@
    ]
   },
   {
+   "id": "taisy0",
+   "name": "気になる、記になる…",
+   "category": "apple",
+   "site_url": "https://taisy0.com/",
+   "feeds": [
+    "https://taisy0.com/feed"
+   ],
+   "exclude_categories": [
+    "セール"
+   ]
+  },
+  {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",
@@ -102,6 +114,16 @@
     "｜キャプテン福田",
     "キャプテン福田"
    ]
+  },
+  {
+   "id": "inukichi",
+   "name": "いぬきちのコンビニ飯",
+   "category": "food",
+   "site_url": "https://conmeshi.com/",
+   "feeds": [
+    "https://conmeshi.com/feed"
+   ],
+   "exclude_categories": []
   }
  ]
 }
