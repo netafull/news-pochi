@@ -31,6 +31,12 @@
    "site_url": "https://iphone-mania.jp/"
   },
   {
+   "id": "macotakara",
+   "name": "Mac OTAKARA",
+   "category": "apple",
+   "site_url": "https://www.macotakara.jp/"
+  },
+  {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",

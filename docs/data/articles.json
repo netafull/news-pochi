@@ -1,6 +1,14 @@
 {
- "generated": "2026-11-24T06:45:14Z",
+ "generated": "2026-11-24T07:27:14Z",
  "articles": [
+  {
+   "url": "https://gori.me/macosx/macosx-news/173020",
+   "title": "xnulinux公開、LinuxでmacOSが31秒起動。Stelaに続く”家の外”実験",
+   "blog": "gorime",
+   "published": "2026-11-24T07:20:57Z",
+   "summary": "AppleのXNUカーネルをLinuxに読み込んで動かすオープンソース「xnulinux」がGitHubで公開された。仮想化を挟まずmacOS 27.2.1が31〜48秒で起動し、Apple純正の仮想化とほぼ同等の速さ。AMFIやSIPを書…",
+   "image": "https://gori.me/uploads/2026/11/1795472904208-macos-and-linux-800x500.jpg"
+  },
   {
    "url": "https://iphone-mania.jp/app-609030/",
    "title": "Gecko版FirefoxがiPhoneに来ない理由とは？障壁は地域限定の別アプリ",
@@ -10,12 +18,28 @@
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/24/firefox-app-icon.jpg"
   },
   {
+   "url": "https://www.macotakara.jp/Google/entry-52429.html",
+   "title": "日本でもGoogle for Creatorsの「検索プロフィール」申請が可能に",
+   "blog": "macotakara",
+   "published": "2026-11-24T06:32:55Z",
+   "summary": "Mac Otakaraの検索プロフィール Googleが、クリエイターが学び、成長し、インスピレーションを得られる新たな拠点となる「Google for Creators」の「検索プロフィール」登録申請受付を日本でも開始しています。 検索プ…",
+   "image": "https://www.macotakara.jp/archives/001/202611/2457d37ba780e7e4.png"
+  },
+  {
    "url": "https://gori.me/gadget/173032",
    "title": "Anker Eufy新作防犯カメラが登場。窓直付けのE10と、ソーラー付き2眼4KカメラのE50",
    "blog": "gorime",
    "published": "2026-11-24T04:31:39Z",
    "summary": "Anker Japanが11月24日、屋外用防犯カメラ「Anker Eufy SoloCam E50」を税込29,990円で発売した。広角と望遠の2つのカメラが最大4Kで、AIが人を自動追尾する。12倍ハイブリッドズーム、5Wのソーラーパネ…",
    "image": "https://gori.me/uploads/2026/11/1795493641993-Anker-Eufy-SoloCam-E50-Window-Camera-E10-800x450.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/rumor/entry-52428.html",
+   "title": "Bloomberg：Apple、2026年世界エイズデーに合わせ(PRODUCT)RED製品を発売予定",
+   "blog": "macotakara",
+   "published": "2026-11-24T03:30:06Z",
+   "summary": "(PRODUCT)RED Bloombergが、Appleは、2026年12月1日の「世界エイズデー」に合わせ、(PRODUCT)RED製品を発売する予定だと伝えています。 今回、(PRODUCT)RED製品が復活する理由は、(RED)団体…",
+   "image": "https://www.macotakara.jp/archives/001/202611/291b43605e67e67b.jpg"
   },
   {
    "url": "https://iphone-mania.jp/apple-609027/",
@@ -32,6 +56,14 @@
    "published": "2026-11-24T03:00:00Z",
    "summary": "iPhone Maniaでは、2027年春に発表される見込みのiPhone 18、iPhone 18e、iPhone Air 2について、買うつもりがあるか、気になっている機種、いくらまで出せるか、期待していること、そし […]",
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/survey_result_13th.png"
+  },
+  {
+   "url": "https://www.macotakara.jp/Watch/entry-52427.html",
+   "title": "Apple Watchで血圧は測れる？「高血圧パターンの通知」対応機種・設定方法と数値記録のやり方",
+   "blog": "macotakara",
+   "published": "2026-11-24T02:32:43Z",
+   "summary": "高血圧の通知 「Apple Watchで日々の血圧を測りたい」「対応しているモデルはどれ？」と気になっている方も多いのではないでしょうか。 結論から言うと、現在のApple Watch単体では最高血圧・最低血圧の数値（mmHg）を直接測定す…",
+   "image": "https://www.macotakara.jp/archives/001/202611/180f9b1d2ed490c3.jpg"
   },
   {
    "url": "https://netaful.jp/fast-food/0213229.html",
@@ -58,6 +90,14 @@
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEO1n-6c6HQQtpJ5dWdW8mWVWVdLFlnks4RJ4njKLGzZeNxg9Y9mMn1hfyto_iOmAZ-vq4hqVx1ZMhu3DrsQaf4b0z4gkwWc6KPLA1OhOQqGqQlRQg04dZPxBevvPRtnhnd3dSVYH7Sh3Pl75Lnc9XPLLMIZcyuXMay5hvZw4SfC7g_pwBG-x6dWb5LfFf/s72-w640-h540-c/IMG_E2970.JPG"
   },
   {
+   "url": "https://www.macotakara.jp/software/entry-52426.html",
+   "title": "Apple標準「プレビュー」アプリの使い方まとめ｜iPhone・iPad・MacでのPDF編集・画像加工から開かない設定まで解説",
+   "blog": "macotakara",
+   "published": "2026-11-24T02:06:44Z",
+   "summary": "Appleプレビュー Apple純正の「プレビュー」（Preview）アプリは、Macの長年の定番標準アプリであるだけでなく、iOS 26 / iPadOS 26 以降のiPhone・iPadにも標準搭載された無料のPDF・画像ビューア＆編…",
+   "image": "https://www.macotakara.jp/archives/001/202611/51ddda56181807b5.jpg"
+  },
+  {
    "url": "https://supersalariedman.blogspot.com/2026/11/blog-post_261.html",
    "title": "実食！板チョコメロンパン（ローソン）カロリー糖質は？｜キャプテン福田",
    "blog": "supersalariedman",
@@ -72,6 +112,14 @@
    "published": "2026-11-24T01:44:36Z",
    "summary": "ローソンから「得パンシュガーマーガリンブレッド」登場！ まるっとわかるキャプテン福田の実食レビュー！ローソンから「得パンシュガーマーガリンブレッド」新発売！カロリー糖質も記載。画像満載。断面画像も！ふんわり食感の生地にマーガリンとグラニュー…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEmNSQXUkN_1OZ8A0ABh2gIEur62L4_-I_6j69fZpuO4LOBnlfKKwqG5Qobe_HXCWBe2QzF8DYXNYFqTQA6Q52gM1gyBLSsEs5c0E4bQxCXMgIdt9ohr31z0b1urLHMFa9YJH7zlwU6Hd3YvGbgixzjKRJptjqTtkFKxwTOoZDdHEa3laCPqSL03kDhkmf/s72-w640-h568-c/IMG_E2904.JPG"
+  },
+  {
+   "url": "https://www.macotakara.jp/macintosh/entry-52425.html",
+   "title": "MacでQRコードを読み取る方法まとめ｜アプリ不要の標準機能（画像・画面・カメラ）からおすすめ無料アプリまで徹底解説",
+   "blog": "macotakara",
+   "published": "2026-11-24T01:42:57Z",
+   "summary": "MacでQRコードを読み取る方法 Macの画面上に表示されたQRコードや、手元にある紙のQRコードをMacで読み取りたいと思ったことはありませんか？ iPhoneのように「カメラアプリを起動してかざすだけ」という専用機能はmacOSに搭載さ…",
+   "image": "https://www.macotakara.jp/archives/001/202611/f09be73b7331492f.jpg"
   },
   {
    "url": "https://supersalariedman.blogspot.com/2026/11/blog-post_371.html",
@@ -178,12 +226,36 @@
    "image": "https://gori.me/uploads/2024/06/boliviainteligente-ZS3S9a3jEQ-unsplash-800x500.jpg"
   },
   {
+   "url": "https://www.macotakara.jp/sale/entry-52423.html",
+   "title": "Amazon、ARKEEPの5000mAhワイヤレス充電対応モバイルバッテリー「U23」を1,000円で販売中",
+   "blog": "macotakara",
+   "published": "2026-11-23T15:11:32Z",
+   "summary": "U23 Amazonが、ARKEEPの5000mAhワイヤレス充電対応モバイルバッテリー「U23」を1,000円で販売しています。 容量5000mAhバッテリーを内蔵し、最大15W出力ワイヤレス充電に加え、最大30W USB-Cポート充電、…",
+   "image": "https://www.macotakara.jp/archives/001/202611/59a0650b34fcb262.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/sale/entry-52422.html",
+   "title": "Amazon、ZEEKKの炭素鋼合金製スマホスタンド「K72-01」を699円で販売中",
+   "blog": "macotakara",
+   "published": "2026-11-23T15:11:06Z",
+   "summary": "K72-01 Amazonが、ZEEKKの炭素鋼合金製スマホスタンド「K72-01」を699円で販売しています。 スマホスタンド台座が360度回転するため、iPhoneを載せたまま、見せたい向きに自由に回転させることができます。 2026年…",
+   "image": "https://www.macotakara.jp/archives/001/202611/516f74544ef209a2.jpg"
+  },
+  {
    "url": "https://iphone-mania.jp/funny-608999/",
    "title": "iPhone Duoの「スターホワイト」と相性が良い壁紙10選",
    "blog": "iphone-mania",
    "published": "2026-11-23T15:05:00Z",
    "summary": "iPhone Duoの本体カラー「スターホワイト」と相性が良い10種類の壁紙を、iDownload Blogが紹介しています。iPhone Duoの標準設定の壁紙から気分転換をはかりたい場合に、好みのものが見つかるかもし […]",
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/23/iPhone-duo-iDB-WP.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/news/entry-52424.html",
+   "title": "NVIDIA、ジェンスン・フアン氏がCEOとして復帰",
+   "blog": "macotakara",
+   "published": "2026-11-23T15:04:21Z",
+   "summary": "NVIDIA NVIDIAが、同社の取締役会は、ジェンスン・フアン氏を社長兼最高経営責任者および取締役として再任したと発表しています。 フアン氏の率直さとNVIDIAを率いる能力に満足し、満場一致でフアン氏の復帰を決定しました。取締役会は、…",
+   "image": "https://www.macotakara.jp/archives/001/202611/8c9d1eff4cfd6b7dd5ac34f87ea2a8d1d60545074bd8ed7267f04eeac32ea471.jpg"
   },
   {
    "url": "https://iphone-mania.jp/apple-609016/",
@@ -210,6 +282,14 @@
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/23/9ec404bd2ae583b8c769fadeb5a43626.png"
   },
   {
+   "url": "https://www.macotakara.jp/etc/category-59/entry-52421.html",
+   "title": "iPhone Duo 対応アプリのまとめ",
+   "blog": "macotakara",
+   "published": "2026-11-23T09:44:51Z",
+   "summary": "iPhone Duo App Store iPhone Duo対応アプリのまとめです。 iPhone用アプリのフレキシブル表示も含まれています。 2026年10月22日( 木 ) Amazon、電子書籍アプリ「Amazon Kindle」が…",
+   "image": "https://www.macotakara.jp/archives/001/202611/f86f1cceea4a3787.jpg"
+  },
+  {
    "url": "https://shingekifood.com/entry/2026/11/23/174556",
    "title": "ローソン「盛りすぎ！バスチー」が最高！数量限定でお得、人気スイーツが約50％増量",
    "blog": "shingeki",
@@ -224,6 +304,14 @@
    "published": "2026-11-23T05:40:20Z",
    "summary": "iOS27では、やりたいことを日本語で伝えるだけで、Apple Intelligenceがショートカットを組み立ててくれます。 ショートカット初心者がiPhone15 Proで3種類を作ったところ、すべて一度の指示で生成 […]",
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/23/8731fbbb8bb57871e210265c08f24540.png"
+  },
+  {
+   "url": "https://www.macotakara.jp/iphone_app_store/entry-52420.html",
+   "title": "フォルテのiPhone用写真・動画の顔ぼかしアプリ「ぼかし＆モザイク」を試す",
+   "blog": "macotakara",
+   "published": "2026-11-23T05:06:57Z",
+   "summary": "ぼかし＆モザイク フォルテが、iPhone用写真・動画の顔ぼかしアプリ「ぼかし＆モザイク」を、App Storeにて配信していたので試してみました。 写真と動画に写った顔を隠せるアプリで、写真を読み込んでボタンひとつで顔を見つけて隠してくれ…",
+   "image": "https://www.macotakara.jp/archives/001/202611/e9ddf043d5d60789.jpg"
   },
   {
    "url": "https://netaful.jp/fast-food/0213174.html",
@@ -272,6 +360,22 @@
    "published": "2026-11-23T00:00:00Z",
    "summary": "MacRumorsによると、Appleは2027年2月か3月に、iPhone 18e、iPhone 18、新型iPad、MacBook Neo 2、MacBook Airを発表する計画だそうです。 第1弾はiPhone ... 投稿 iPh…",
    "image": "https://netaful.jp/wp-content/uploads/2026/03/Apple-MacBook-Neo-hero-260304-485x323.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/sale/entry-52417.html",
+   "title": "Amazon、GONSIFACHAのクランプ付きMagSafeマウントスタンド「Travel magnetic stand-BK」を1,065円で販売中",
+   "blog": "macotakara",
+   "published": "2026-11-22T16:55:26Z",
+   "summary": "Travel magnetic stand-BK Amazonが、GONSIFACHAのクランプ付きMagSafeマウントスタンド「Travel magnetic stand-BK」を1,065円で販売しています。 航空機の座席の背もたれや…",
+   "image": "https://www.macotakara.jp/archives/001/202611/350408d0b993724f.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/iphone_app_store/entry-52416.html",
+   "title": "9io、iPhone Duo向けオリジナルゲーム付きレトロゲームエミュレーター「Bitfold」をリリース",
+   "blog": "macotakara",
+   "published": "2026-11-22T15:58:04Z",
+   "summary": "Bitfold 9ioが、iPhone/iPad用レトロゲームエミュレーター「Bitfold」を、App Storeにて配信を開始しています。 世界で最も正確なゲームボーイエミュレーション「SameBoyコア」をベースにしていますが、iPh…",
+   "image": "https://www.macotakara.jp/archives/001/202611/4d640a7f1f5a4dda.jpg"
   },
   {
    "url": "https://shingekifood.com/entry/2026/11/23/003952",
@@ -330,12 +434,44 @@
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/22/M7-iPad-Pro-rumors_01.jpg"
   },
   {
+   "url": "https://www.macotakara.jp/iphone_app_store/entry-52415.html",
+   "title": "iPhone Duoを閉じて押し花を作るアプリ「Pressed」リリース",
+   "blog": "macotakara",
+   "published": "2026-11-22T08:59:26Z",
+   "summary": "Pressed Greg Feingoldが、iPhone用押し花作成アプリ「Pressed」を、App Storeにて配信を開始しています。 見つけた花を押し花にして記念品にするアプリです。 iPhone Duoのカメラで花を撮影するか、…",
+   "image": "https://www.macotakara.jp/archives/001/202611/7d333818e862564c.jpg"
+  },
+  {
    "url": "https://netaful.jp/lawson/0213127.html",
    "title": "【ローソン】「盛りすぎ！塩焼そば」麺重量50%増量！総重量600gオーバーのボリュームがすごい",
    "blog": "netaful-eat",
    "published": "2026-11-22T05:30:00Z",
    "summary": "ローソンの「盛りすぎ！塩焼そば」を食べました。「盛りすぎ！塩焼そば」は、ローソンが2026年11月16日から発売した「盛りすぎ！チャレンジ」で麺重量を50%増量した塩焼そばです。 ローソンの「盛りすぎ！塩焼そば」は美味し... 投稿 【ロー…",
    "image": "https://netaful.jp/wp-content/uploads/2026/11/lawson-shio-yakisoba-010-485x364.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/software/entry-52413.html",
+   "title": "Apple、フル解像度の画像および動画の高密度メトリック深度を推定する手法「Depth Pro 2」を発表",
+   "blog": "macotakara",
+   "published": "2026-11-21T17:58:21Z",
+   "summary": "Depth Pro 2 Appleが、画像および動画のフル解像度における高密度メトリック深度を推定する手法「Depth Pro 2」を発表しています。 単眼深度推定に関する先行手法を分析した結果、これらの手法は一般的に時間的一貫性と境界の鮮…",
+   "image": "https://www.macotakara.jp/archives/001/202611/f5e9142d7b5b5dff.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/sale/entry-52411.html",
+   "title": "Amazon、DellのMac対応23.8インチタッチモニター「P2424HT」を49,999円で販売中",
+   "blog": "macotakara",
+   "published": "2026-11-21T17:00:08Z",
+   "summary": "P2424HT Amazonが、DellのMac対応23.8インチマルチタッチモニター「P2424HT」を49,999円で販売しています。 解像度は1920 x 1080（フルHD）で、接続するMacに「Dell Display and P…",
+   "image": "https://www.macotakara.jp/archives/001/202611/f3da6d8f1a602450.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/iphone_app_store/entry-52410.html",
+   "title": "Ryan Tag、iPhone Duo向け動画編集アプリ「Clipstack」をリリース",
+   "blog": "macotakara",
+   "published": "2026-11-21T16:35:32Z",
+   "summary": "Clipstack Ryan Tagが、iPhone用動画編集アプリ「Clipstack」を、App Storeにて配信を開始しています。 アカウントもウォーターマークもサブスクリプションも不要で、リアルなマルチトラックタイムライン、自動キ…",
+   "image": "https://www.macotakara.jp/archives/001/202611/5890bd67858868a7.jpg"
   },
   {
    "url": "https://iphone-mania.jp/sale-608940/",
@@ -352,6 +488,14 @@
    "published": "2026-11-21T07:21:12Z",
    "summary": "海外メディアの報道によると、iPhoneのカメラアプリと写真アプリを統括していたApple幹部のジョン・マコーマック氏が、10月末に退任しました。報道からは、手元のカメラアプリや写真の仕上がりがすぐに変わると読み取れる材 […]",
    "image": "https://iphone-mania.jp/wp-content/uploads/2026/11/21/iPhone-18-Pro-Camera.png"
+  },
+  {
+   "url": "https://www.macotakara.jp/iphone_app_store/entry-52409.html",
+   "title": "Heliographe、iPhone Duoでウエストレベルファインダーに対応したカメラアプリ「Bayer Cam」をリリース",
+   "blog": "macotakara",
+   "published": "2026-11-21T07:20:02Z",
+   "summary": "Bayer Cam 2.2 Heliographeが、iPhone/iPad用カメラアプリ「Bayer Cam 2.2」を、App Storeにて配信を開始しています。 このバージョンからiPhone Duoに対応しています。 Bayer …",
+   "image": "https://www.macotakara.jp/archives/001/202611/4afbfb645baf5048.jpg"
   },
   {
    "url": "https://netaful.jp/seven-eleven/0213085.html",
