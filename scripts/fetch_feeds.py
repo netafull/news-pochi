@@ -331,7 +331,8 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
     articles = merge(blogs, fresh, existing_articles, now, config.get("retention_days", 7))
     public = {
         "categories": sorted(bundle["categories"], key=lambda c: c["order"]),
-        "blogs": [{"id": b["id"], "name": b["name"], "category": b["category"], "site_url": b["site_url"]} for b in blogs],
+        "blogs": [{"id": b["id"], "name": b["name"], "category": b["category"], "site_url": b["site_url"],
+                   **({"yomi": b["yomi"]} if b.get("yomi") else {})} for b in blogs],
     }
     return articles, {"generated": iso(now), "blogs": status}, public
 

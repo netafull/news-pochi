@@ -26,7 +26,8 @@ var out = {
   filtered: N.filterArticles(C.articles, C.active, C.category, C.cat).map(function (a) { return a.url; }),
   fmt: C.dates.map(function (d) { return N.fmtJst(d); }),
   cookie: N.readCookie(C.cookie, 'np_sub'),
-  http: C.urls.map(function (u) { return N.isHttp(u); })
+  http: C.urls.map(function (u) { return N.isHttp(u); }),
+  sorted: N.sortBlogs(C.blogs || []).map(function (b) { return b.id; })
 };
 JSON.stringify(out);
 """
@@ -103,6 +104,12 @@ class AppLogicTest(unittest.TestCase):
     def test_fmt_jst(self):
         r = self.run_case(dates=["2026-11-24T05:05:00Z", "2026-11-23T15:00:00Z", "2026-12-01T00:00:00+09:00", "bad"])["fmt"]
         self.assertEqual(r, ["11/24 14:05", "11/24 00:00", "12/1 00:00", ""])
+
+    def test_sort_blogs(self):
+        blogs = [{"id": "netaful", "name": "ネタフル"}, {"id": "shingeki", "name": "進撃のグルメ", "yomi": "しんげきのぐるめ"},
+                 {"id": "conbini", "name": "コンビニ・サラリーマン総研", "yomi": "こんびにさらりーまんそうけん"},
+                 {"id": "gori", "name": "ゴリミー"}, {"id": "mac", "name": "Mac OTAKARA"}, {"id": "iphone", "name": "iPhone Mania"}]
+        self.assertEqual(self.run_case(blogs=blogs)["sorted"], ["iphone", "mac", "conbini", "gori", "shingeki", "netaful"])
 
     def test_cookie_and_http(self):
         self.assertEqual(self.run_case(cookie="a=1; np_sub=np1-all; b=2")["cookie"], "np1-all")

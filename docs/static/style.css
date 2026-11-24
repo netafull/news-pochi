@@ -20,9 +20,9 @@ a { color: var(--accent); }
 [hidden] { display: none !important; }
 
 .site-header { max-width: 980px; margin: 0 auto; padding: 20px 16px 8px; }
-.site-title { margin: 0; font-size: 26px; font-weight: 800; line-height: 1.3; letter-spacing: 0.02em; }
-.site-title a { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); text-decoration: none; }
-.site-title img { width: 52px; height: 52px; }
+.site-title { margin: 0; font-size: 22px; font-weight: 700; line-height: 1.3; }
+.site-title a { display: inline-flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; }
+.site-title img { width: 44px; height: 44px; }
 .site-header .tagline { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
 
 main { max-width: 980px; margin: 0 auto; padding: 0 16px 40px; }
@@ -62,7 +62,7 @@ h2 { font-size: 1.1rem; line-height: 1.4; margin: 24px 0 12px; padding-left: 10p
 .np-title { margin: 0; font-size: 1rem; line-height: 1.5; }
 .np-title a { color: var(--text); }
 .np-meta { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 2px 0 0; font-size: 0.78rem; color: var(--muted); }
-.np-blog { font-weight: 700; }
+.np-blog { font-weight: 700; font-size: 0.85rem; color: var(--accent); }  /* メタ行の中でブログ名だけ軽く目立たせる（藍・少し大きく） */
 .np-summary {
   margin: 4px 0 0; font-size: 0.85rem; line-height: 1.55; color: var(--muted);
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
