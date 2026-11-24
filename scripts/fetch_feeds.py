@@ -235,6 +235,13 @@ def parse_feed(data):
     return out
 
 
+def strip_suffix(title, suffix):
+    """タイトル末尾の決まった文字列（例: 「｜キャプテン福田」）を落とす。落とすと空になるなら元のまま。"""
+    if suffix and title.endswith(suffix) and title[:-len(suffix)].strip():
+        return title[:-len(suffix)].rstrip()
+    return title
+
+
 def is_excluded(cats, words):
     return any(w and w in c for c in cats for w in words)
 
@@ -276,6 +283,10 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
     skip_urls = {b["id"]: {normalize_url(u) for u in b.get("exclude_urls", [])} for b in blogs}
     existing_articles = [a for a in (existing_articles or [])
                          if normalize_url(a.get("url", "")) not in skip_urls.get(a.get("blog"), set())]
+    # タイトル末尾の決まり文句は、保存済みの記事にもすぐ効かせる
+    suffix = {b["id"]: b.get("title_suffix", "") for b in blogs}
+    existing_articles = [{**a, "title": strip_suffix(a.get("title", ""), suffix.get(a.get("blog"), ""))}
+                         for a in existing_articles]
     for b in blogs:
         prev = (old_status or {}).get("blogs", {}).get(b["id"], {})
         errors, ok_count, kept, excluded, imgs = [], 0, [], 0, 0
@@ -296,7 +307,7 @@ def run(config, bundle, fetcher, existing_articles, old_status, now):
                 pub = r["published"] or now
                 if pub > now + datetime.timedelta(days=1):
                     pub = now
-                kept.append({"url": r["url"], "title": r["title"], "blog": b["id"], "published": iso(pub),
+                kept.append({"url": r["url"], "title": strip_suffix(r["title"], b.get("title_suffix", "")), "blog": b["id"], "published": iso(pub),
                              "summary": r["summary"], "image": r["image"]})
         # ブログ内（複数フィード間）の重複を落とす
         uniq, seen = [], set()

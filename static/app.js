@@ -134,7 +134,7 @@ var NewsPochi = (function () {
 if (typeof document !== 'undefined') (function () {
   'use strict';
   var N = NewsPochi;
-  var VIEW_KEY = 'newspochi.view', COOKIE = 'np_sub';
+  var VIEW_KEY = 'newspochi.view', CAT_KEY = 'newspochi.category', COOKIE = 'np_sub';
   function load(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } }
   function save(k, v) { try { window.localStorage.setItem(k, v); } catch (e) { /* 使えなくても動く */ } }
 
@@ -155,7 +155,7 @@ if (typeof document !== 'undefined') (function () {
   var generated = '';
   var allIds = [], blogById = {}, blogCategory = {};
   var sub = { mode: 'all' };
-  var category = '';
+  var category = load(CAT_KEY) || '';  // 最後に選んだ系統チップ（無くなった系統なら「すべて」に戻す）
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -181,11 +181,12 @@ if (typeof document !== 'undefined') (function () {
   function renderChips() {
     chipBox.textContent = '';
     var defs = [{ id: '', name: 'すべて' }].concat(data.categories);
+    if (!defs.some(function (c) { return c.id === category; })) category = '';
     defs.forEach(function (c) {
       var b = el('button', 'np-chip', c.name);
       b.type = 'button';
       b.setAttribute('aria-pressed', category === c.id ? 'true' : 'false');
-      b.addEventListener('click', function () { category = c.id; renderChips(); renderHome(); });
+      b.addEventListener('click', function () { category = c.id; save(CAT_KEY, category); renderChips(); renderHome(); });
       chipBox.appendChild(b);
     });
   }
