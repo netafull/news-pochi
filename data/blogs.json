@@ -62,6 +62,16 @@
    ]
   },
   {
+   "id": "taisy0",
+   "name": "気になる、記になる…",
+   "category": "apple",
+   "site_url": "https://taisy0.com/",
+   "feeds": [
+    "https://taisy0.com/feed"
+   ],
+   "exclude_categories": []
+  },
+  {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",
