@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: ブログ設定の確認
+        run: python3 scripts/check_blogs.py
+
       # JSのテストは macOS の osascript(JXA) を使うため、Linuxではスキップされる
       - name: テスト
         run: python3 -m unittest discover -s tests

@@ -337,6 +337,8 @@ def write_if_changed(path, obj, stable=False):
 def main(fetcher=None, now=None, data_dir=DOCS_DATA):
     config = load_json(ROOT / "config.json")
     bundle = load_json(ROOT / "data/blogs.json")
+    # enabled: false のブログは掲載をやめる（購読リストからも消え、記事も次の実行で消える。id は欠番として残す）
+    bundle = {**bundle, "blogs": [b for b in bundle["blogs"] if b.get("enabled", True)]}
     now = now or datetime.datetime.now(datetime.timezone.utc)
     fetcher = fetcher or Fetcher(config)
     old = load_json(data_dir / "articles.json", {}) or {}

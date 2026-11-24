@@ -22,6 +22,22 @@ https://news.netaful.jp/ — ニュース系ブログのRSSを系統別（Apple�
 
 ## 運用手順
 
+### ⓪ ブラウザだけでブログを登録・解除する（管理画面の代わり）
+
+GitHub Pages は静的なので、サイトの画面から設定を保存する仕組みは持てない。代わりに **GitHub の Web 画面で `data/blogs.json` を編集してコミットする**と、その場で更新が走って数分で反映される（`update.yml` は `data/blogs.json` の変更が main に入ると自動で動く）。
+
+1. https://github.com/netafull/news-pochi/blob/main/data/blogs.json を開き、右上の鉛筆（Edit this file）を押す
+2. 編集する
+   - **登録**：`blogs` の最後の `}` の後ろに `,` を付け、下の「① ブログ・フィードの追加」の形で1件足す
+   - **解除（一時的に止める）**：そのブログに `"enabled": false` を足す。購読リストからも消え、記事も次の更新で消える。戻すときは消すか `true` に。id は欠番のまま残るので、再開しても利用者の購読設定は壊れない
+   - **除外**：`exclude_categories` / `exclude_urls` に語やURLを足す（② を参照）
+3. 「Commit changes」を押す
+   - 所有者（マサト）は「Commit directly to the main branch」でよい。すぐ反映される
+   - エージェント（モル・マル）は AGENTS.md に従い「Create a new branch … and start a pull request」を選ぶ。PR でテストと書式の確認が走り、所有者がマージした時点で反映される
+4. 数分後に Actions 画面の update が緑になっていれば完了。赤なら、ログの「ブログ設定の確認」に **何行目のどこを直せばよいか日本語で出る**（カンマの付け忘れ、知らない項目名、存在しない系統など）。直して再びコミットする。赤のあいだはサイトは前の状態のまま（壊れた設定で上書きされない）
+
+手元で確かめるなら `python3 scripts/check_blogs.py`。
+
 ### ① ブログ・フィードの追加
 
 `data/blogs.json` の `blogs` に1件足す。
@@ -47,6 +63,8 @@ https://news.netaful.jp/ — ニュース系ブログのRSSを系統別（Apple�
 - ネタフル飲食系は PICKUP タグのフィード `https://netaful.jp/tag/pickup/feed`（オーナーが食レポに付ける選別タグ。2026-11-24 オーナー決定）。`/eat/feed` は更新が止まっているので使わない。フィードURLは実物を確認してから書く。
 
 ### ② 除外ルール
+
+現在の設定：ゴリミーは `["セール"]`、ネタフル飲食系（PICKUPタグ）は `["家電"]`（家電レビューにもPICKUPが付くため。「セール」はコンビニのセール系食レポを落とすので入れない。2026-11-24 オーナー決定）。
 
 `exclude_categories` に語の配列を書く。記事のカテゴリ（RSSの `<category>`、Atomの `<category term>`）の**どれか**に、いずれかの語が**含まれていたら**（部分一致）その記事を落とす。例：ゴリミーは `["セール"]` で「Amazonセール情報」なども落ちる。
 

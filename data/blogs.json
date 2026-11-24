@@ -39,7 +39,7 @@
    "category": "food",
    "site_url": "https://netaful.jp/",
    "feeds": ["https://netaful.jp/tag/pickup/feed"],
-   "exclude_categories": []
+   "exclude_categories": ["家電"]
   },
   {
    "id": "shingeki",

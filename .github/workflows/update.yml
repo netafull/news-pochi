@@ -9,6 +9,13 @@ on:
   # 発火元: Cloud Schedulerのジョブ(運営者の確認後に作成する予定。名前は news-pochi-update、
   #   毎時0分を想定)。手動実行: gh workflow run update.yml -R netafull/news-pochi
   workflow_dispatch:
+  # ブログの登録・解除（data/blogs.json の編集）が main に入ったら、定期実行を待たずにすぐ反映する。
+  # 取得するのは登録ブログのフィード数本だけで、外部APIの枠は使わない。
+  # ボットのコミットは docs/ だけを変えるので、ここに引っかかってループすることはない
+  push:
+    branches: [main]
+    paths:
+      - data/blogs.json
 
 permissions:
   contents: write
@@ -31,6 +38,9 @@ jobs:
       - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
         with:
           python-version: "3.12"
+
+      - name: ブログ設定の確認
+        run: python3 scripts/check_blogs.py
 
       - name: テスト
         run: python3 -m unittest discover -s tests
