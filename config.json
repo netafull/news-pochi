@@ -2,7 +2,7 @@
  "site_title": "ニュースポチ",
  "site_url": "https://news.netaful.jp/",
  "ga4_id": "G-H1ZRP6WHQ3",
- "request_form_url": "",
+ "request_form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdtziQaZyWsoArpMSnHR6ih8NNuRzADRYOeLRsg7Qhh_D1-EQ/viewform",
  "retention_days": 7,
  "request_interval_sec": 2,
  "timeout_sec": 20,
