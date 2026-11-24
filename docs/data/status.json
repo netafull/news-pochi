@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-24T16:45:13Z",
+ "generated": "2026-11-24T21:45:11Z",
  "blogs": {
   "netaful-apple": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 4,
    "feeds_total": 4,
@@ -11,16 +11,16 @@
    "with_image": 80
   },
   "gorime": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
-   "fetched": 9,
-   "excluded": 3,
-   "with_image": 9
+   "fetched": 8,
+   "excluded": 4,
+   "with_image": 8
   },
   "iphone-mania": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -29,7 +29,7 @@
    "with_image": 27
   },
   "macotakara": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -38,7 +38,7 @@
    "with_image": 18
   },
   "taisy0": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -47,7 +47,7 @@
    "with_image": 17
   },
   "netaful-eat": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -56,7 +56,7 @@
    "with_image": 20
   },
   "shingeki": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -65,7 +65,7 @@
    "with_image": 4
   },
   "supersalariedman": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -74,7 +74,7 @@
    "with_image": 24
   },
   "inukichi": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
@@ -83,7 +83,7 @@
    "with_image": 20
   },
   "amaikeiki": {
-   "last_success": "2026-11-24T16:45:13Z",
+   "last_success": "2026-11-24T21:45:11Z",
    "last_error": null,
    "feeds_ok": 1,
    "feeds_total": 1,
