@@ -11,7 +11,7 @@
    "order": 2
   }
  ],
- "blogs": [  
+ "blogs": [
   {
    "id": "netaful-apple",
    "name": "ネタフル",
@@ -71,7 +71,8 @@
    ],
    "exclude_categories": [
     "セール"
-   ]
+   ],
+   "yomi": "きになるきになる"
   },
   {
    "id": "netaful-eat",
@@ -96,7 +97,8 @@
    "exclude_categories": [],
    "include_categories": [
     "正直レビュー"
-   ]
+   ],
+   "yomi": "しんげきのぐるめ"
   },
   {
    "id": "supersalariedman",
@@ -113,7 +115,8 @@
    "title_suffix": [
     "｜キャプテン福田",
     "キャプテン福田"
-   ]
+   ],
+   "yomi": "こんびにさらりーまんそうけん"
   },
   {
    "id": "inukichi",
@@ -123,7 +126,8 @@
    "feeds": [
     "https://conmeshi.com/feed"
    ],
-   "exclude_categories": []
+   "exclude_categories": [],
+   "yomi": "いぬきちのこんびにめし"
   }
  ]
 }

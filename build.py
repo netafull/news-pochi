@@ -82,7 +82,7 @@ def head(config, title, desc, canonical, extra=""):
 
 def header(tag):
     return f"""<header class="site-header">
-<{tag} class="site-title"><a href="/"><img src="/assets/logo.png" alt="" width="52" height="52">{NAME}</a></{tag}>
+<{tag} class="site-title"><a href="/"><img src="/assets/logo.png" alt="" width="44" height="44">{NAME}</a></{tag}>
 <p class="tagline">{TAGLINE}</p>
 </header>
 """

@@ -40,7 +40,8 @@
    "id": "taisy0",
    "name": "気になる、記になる…",
    "category": "apple",
-   "site_url": "https://taisy0.com/"
+   "site_url": "https://taisy0.com/",
+   "yomi": "きになるきになる"
   },
   {
    "id": "netaful-eat",
@@ -52,19 +53,22 @@
    "id": "shingeki",
    "name": "進撃のグルメ",
    "category": "food",
-   "site_url": "https://shingekifood.com/"
+   "site_url": "https://shingekifood.com/",
+   "yomi": "しんげきのぐるめ"
   },
   {
    "id": "supersalariedman",
    "name": "コンビニ・サラリーマン総研",
    "category": "food",
-   "site_url": "https://supersalariedman.blogspot.com/"
+   "site_url": "https://supersalariedman.blogspot.com/",
+   "yomi": "こんびにさらりーまんそうけん"
   },
   {
    "id": "inukichi",
    "name": "いぬきちのコンビニ飯",
    "category": "food",
-   "site_url": "https://conmeshi.com/"
+   "site_url": "https://conmeshi.com/",
+   "yomi": "いぬきちのこんびにめし"
   }
  ]
 }

@@ -124,7 +124,22 @@ var NewsPochi = (function () {
     return null;
   }
 
+  // 購読リストの並び：読み（yomi、無ければ name）の順。カタカナはひらがなに寄せて五十音で並べる。
+  // 英字の名前は先頭に来る。blogs.json の並び（重複時の優先など）には触らない
+  function sortKey(b) {
+    return String((b && (b.yomi || b.name)) || '').toLowerCase().replace(/[\u30a1-\u30f6]/g, function (ch) {
+      return String.fromCharCode(ch.charCodeAt(0) - 0x60);
+    });
+  }
+  function sortBlogs(blogs) {
+    return (blogs || []).slice().sort(function (a, b) {
+      var x = sortKey(a), y = sortKey(b);
+      return x < y ? -1 : x > y ? 1 : 0;
+    });
+  }
+
   return {
+    sortBlogs: sortBlogs,
     isHttp: isHttp, b64urlEncode: b64urlEncode, b64urlDecode: b64urlDecode, encodeSpell: encodeSpell, decodeSpell: decodeSpell,
     activeIds: activeIds, toggle: toggle, filterArticles: filterArticles, fmtJst: fmtJst, readCookie: readCookie
   };
@@ -249,7 +264,7 @@ if (typeof document !== 'undefined') (function () {
     var on = {};
     N.activeIds(sub, allIds).forEach(function (id) { on[id] = true; });
     data.categories.forEach(function (c) {
-      var blogs = data.blogs.filter(function (b) { return b.category === c.id; });
+      var blogs = N.sortBlogs(data.blogs.filter(function (b) { return b.category === c.id; }));
       if (!blogs.length) return;
       var sec = el('section', 'np-group');
       sec.appendChild(el('h3', 'np-group-h', c.name));
