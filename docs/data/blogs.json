@@ -1,0 +1,52 @@
+{
+ "categories": [
+  {
+   "id": "apple",
+   "name": "Apple系",
+   "order": 1
+  },
+  {
+   "id": "food",
+   "name": "飲食レビュー系",
+   "order": 2
+  }
+ ],
+ "blogs": [
+  {
+   "id": "netaful-apple",
+   "name": "ネタフル",
+   "category": "apple",
+   "site_url": "https://netaful.jp/"
+  },
+  {
+   "id": "gorime",
+   "name": "ゴリミー",
+   "category": "apple",
+   "site_url": "https://gori.me/"
+  },
+  {
+   "id": "iphone-mania",
+   "name": "iPhone Mania",
+   "category": "apple",
+   "site_url": "https://iphone-mania.jp/"
+  },
+  {
+   "id": "netaful-eat",
+   "name": "ネタフル",
+   "category": "food",
+   "site_url": "https://netaful.jp/"
+  },
+  {
+   "id": "shingeki",
+   "name": "進撃のグルメ",
+   "category": "food",
+   "site_url": "https://shingekifood.com/"
+  },
+  {
+   "id": "supersalariedman",
+   "name": "コンビニ・サラリーマン総研",
+   "category": "food",
+   "site_url": "https://supersalariedman.blogspot.com/"
+  }
+ ]
+}

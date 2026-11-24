@@ -1,0 +1,11 @@
+{
+ "site_title": "ニュースポチ",
+ "site_url": "https://news.netaful.jp/",
+ "ga4_id": "",
+ "request_form_url": "",
+ "retention_days": 7,
+ "request_interval_sec": 2,
+ "timeout_sec": 20,
+ "max_bytes": 5242880,
+ "user_agent": "NewsPochi/1.0 (+https://news.netaful.jp/)"
+}

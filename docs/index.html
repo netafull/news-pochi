@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ニュースポチ｜ブログの新着を、系統別にまとめて読む</title>
+<meta name="description" content="ニュース系ブログのRSSを系統別にまとめて読めるサイト。Apple系・飲食レビュー系のブログの新着を、新しい順の1本のタイムラインで。読みたいブログだけを購読リストで選べます。">
+<link rel="canonical" href="https://news.netaful.jp/">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ニュースポチ｜ブログの新着を、系統別にまとめて読む">
+<meta property="og:description" content="ニュース系ブログのRSSを系統別にまとめて読めるサイト。Apple系・飲食レビュー系のブログの新着を、新しい順の1本のタイムラインで。読みたいブログだけを購読リストで選べます。">
+<meta property="og:url" content="https://news.netaful.jp/">
+<meta property="og:site_name" content="ニュースポチ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://news.netaful.jp/assets/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ニュースポチ","url":"https://news.netaful.jp/"}</script>
+</head>
+<body>
+<header class="site-header">
+<h1 class="site-title"><a href="/"><img src="/assets/logo.png" alt="" width="44" height="44">ニュースポチ</a></h1>
+<p class="tagline">ブログの新着を、系統別にまとめて読む</p>
+</header>
+<main>
+<div class="np-tabs" role="tablist" aria-label="表示の切り替え">
+<button type="button" role="tab" class="np-tab" id="tab-home" data-view="home" aria-selected="true" aria-controls="view-home">ホーム</button>
+<button type="button" role="tab" class="np-tab" id="tab-subs" data-view="subs" aria-selected="false" aria-controls="view-subs" tabindex="-1">購読リスト</button>
+</div>
+<div id="view-home" role="tabpanel" aria-labelledby="tab-home">
+<div class="np-chips" id="np-chips" role="group" aria-label="系統で絞り込む"></div>
+<p class="np-status" id="home-status" role="status">読み込み中…</p>
+<ul class="np-list" id="home-list"></ul>
+<p class="np-updated" id="home-updated"></p>
+<noscript><p>このページの表示にはJavaScriptが必要です。</p></noscript>
+</div>
+<div id="view-subs" role="tabpanel" aria-labelledby="tab-subs" hidden>
+<h2>読むブログを選ぶ</h2>
+<div id="subs-groups"></div>
+<button type="button" class="np-btn np-reset" id="subs-reset">すべてオンに戻す</button>
+<h2>秘密の呪文</h2>
+<div class="np-spell">
+<p>購読の設定を表す文字列です。別の端末のこのサイトに貼り付けると、同じ設定にできます。</p>
+<div class="np-spell-row">
+<input type="text" id="spell-current" readonly aria-label="現在の呪文">
+<button type="button" class="np-btn" id="spell-copy">コピー</button>
+</div>
+<div class="np-spell-row">
+<input type="text" id="spell-input" placeholder="呪文を貼り付け" aria-label="読み込む呪文" autocomplete="off" spellcheck="false">
+<button type="button" class="np-btn" id="spell-load">読み込む</button>
+</div>
+<p class="np-msg" id="spell-msg" role="status"></p>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<p>当サイトは各ブログの記事タイトルと概要の一部を表示し、元記事へリンクしています。各記事の権利は各ブログに帰属します。</p>
+<p>Googleアナリティクス（Cookie）を利用しています。</p>
+<nav class="sites"><span class="lbl">関連サイト</span>
+<a href="https://book.netaful.jp/">電書ポチ<span class="lbl"> Kindle本セール</span></a>
+<a href="https://kaden.netaful.jp/">家電ポチ<span class="lbl"> ガジェット・家電セール</span></a>
+<a href="https://apple.netaful.jp/">林檎ポチ<span class="lbl"> Apple整備済製品</span></a>
+<a href="https://manga.netaful.jp/">漫画ポチ<span class="lbl"> Webマンガ横断検索</span></a>
+<a href="https://shinkan.netaful.jp/">マンガ新刊ポチ<span class="lbl"> コミック新刊の発売日をまとめて</span></a>
+<a href="https://conbini.netaful.jp/">コンビニポチ<span class="lbl"> コンビニ新商品アーカイブ</span></a>
+<a href="https://fastfood.netaful.jp/">ファストフードポチ<span class="lbl"> ファストフード限定メニュー</span></a>
+<a href="https://cafe.netaful.jp/">カフェポチ<span class="lbl"> カフェの季節限定メニュー</span></a>
+<a href="https://sushi.netaful.jp/">回転寿司ポチ<span class="lbl"> 回転寿司の期間限定ネタ</span></a>
+<a href="https://cupmen.netaful.jp/">カップ麺ポチ<span class="lbl"> カップ麺の新商品</span></a>
+<a href="https://hotel.netaful.jp/">ホテルポチ<span class="lbl"> 空室ホテルを安い順に検索</span></a>
+<a href="https://onsen.netaful.jp/">温泉宿ポチ<span class="lbl"> 温泉地の空室を、すぐ探す</span></a>
+<a href="https://ritou.netaful.jp/">離島宿ポチ<span class="lbl"> 島の空室を、すぐ探す</span></a>
+<a href="https://michinoeki.netaful.jp/">道の駅ポチ<span class="lbl"> 道の駅の駐車場と設備</span></a>
+<a href="https://shinhatsubai.netaful.jp/">新発売ポチ<span class="lbl"> 新商品を発売日でまとめて</span></a>
+<a href="https://famires.netaful.jp/">ファミレスポチ<span class="lbl"> ファミレスの期間限定フェア</span></a>
+</nav>
+<nav class="sites"><span class="lbl">ポチシリーズ一覧：</span>
+<a href="https://pochi.netaful.jp/">ポチフル</a>
+</nav>
+</footer>
+<script src="/static/app.js" defer></script>
+</body>
+</html>

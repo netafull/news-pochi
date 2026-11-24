@@ -1,0 +1,61 @@
+{
+ "categories": [
+  {"id": "apple", "name": "Apple系", "order": 1},
+  {"id": "food", "name": "飲食レビュー系", "order": 2}
+ ],
+ "blogs": [
+  {
+   "id": "netaful-apple",
+   "name": "ネタフル",
+   "category": "apple",
+   "site_url": "https://netaful.jp/",
+   "feeds": [
+    "https://netaful.jp/mac/feed",
+    "https://netaful.jp/macbook/feed",
+    "https://netaful.jp/iphone/feed",
+    "https://netaful.jp/apple/feed"
+   ],
+   "exclude_categories": []
+  },
+  {
+   "id": "gorime",
+   "name": "ゴリミー",
+   "category": "apple",
+   "site_url": "https://gori.me/",
+   "feeds": ["https://gori.me/feed"],
+   "exclude_categories": ["セール"]
+  },
+  {
+   "id": "iphone-mania",
+   "name": "iPhone Mania",
+   "category": "apple",
+   "site_url": "https://iphone-mania.jp/",
+   "feeds": ["https://iphone-mania.jp/feed/"],
+   "exclude_categories": []
+  },
+  {
+   "id": "netaful-eat",
+   "name": "ネタフル",
+   "category": "food",
+   "site_url": "https://netaful.jp/",
+   "feeds": ["https://netaful.jp/eat/feed"],
+   "exclude_categories": []
+  },
+  {
+   "id": "shingeki",
+   "name": "進撃のグルメ",
+   "category": "food",
+   "site_url": "https://shingekifood.com/",
+   "feeds": ["https://shingekifood.com/feed"],
+   "exclude_categories": []
+  },
+  {
+   "id": "supersalariedman",
+   "name": "コンビニ・サラリーマン総研",
+   "category": "food",
+   "site_url": "https://supersalariedman.blogspot.com/",
+   "feeds": ["https://supersalariedman.blogspot.com/feeds/posts/default?alt=rss"],
+   "exclude_categories": []
+  }
+ ]
+}
