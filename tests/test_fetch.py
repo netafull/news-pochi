@@ -341,6 +341,9 @@ class TitleSuffixTest(unittest.TestCase):
         self.assertEqual(ff.strip_suffix("途中に｜キャプテン福田がある記事", "｜キャプテン福田"), "途中に｜キャプテン福田がある記事")
         self.assertEqual(ff.strip_suffix("｜キャプテン福田", "｜キャプテン福田"), "｜キャプテン福田")
         self.assertEqual(ff.strip_suffix("そのまま", ""), "そのまま")
+        both = ["｜キャプテン福田", "キャプテン福田"]
+        self.assertEqual(ff.strip_suffix("シフォン（セブン）キャプテン福田", both), "シフォン（セブン）")
+        self.assertEqual(ff.strip_suffix("シフォン（セブン）｜キャプテン福田", both), "シフォン（セブン）")
 
     def test_applies_to_fresh_and_saved(self):
         now = datetime.datetime(2026, 11, 24, 6, 0, tzinfo=datetime.timezone.utc)

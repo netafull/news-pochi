@@ -98,7 +98,10 @@
    "exclude_urls": [
     "https://supersalariedman.blogspot.com/2019/06/blog-post.html"
    ],
-   "title_suffix": "｜キャプテン福田"
+   "title_suffix": [
+    "｜キャプテン福田",
+    "キャプテン福田"
+   ]
   }
  ]
 }
