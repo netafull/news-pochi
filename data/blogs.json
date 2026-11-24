@@ -50,6 +50,18 @@
    ]
   },
   {
+   "id": "macotakara",
+   "name": "Mac OTAKARA",
+   "category": "apple",
+   "site_url": "https://www.macotakara.jp/",
+   "feeds": [
+    "https://www.macotakara.jp/rss2.xml"
+   ],
+   "exclude_categories": [
+    "プロモーション"
+   ]
+  },
+  {
    "id": "netaful-eat",
    "name": "ネタフル",
    "category": "food",
