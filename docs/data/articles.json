@@ -1,6 +1,14 @@
 {
- "generated": "2026-11-25T20:45:10Z",
+ "generated": "2026-11-25T21:45:12Z",
  "articles": [
+  {
+   "url": "https://gori.me/macosx/macosx-news/173092",
+   "title": "macOSが動作するiPad「存在する」。ただし社内限定、一般向けの販売予定なし",
+   "blog": "gorime",
+   "published": "2026-11-25T21:30:23Z",
+   "summary": "Appleは社内で、macOSを動かすiPadを「しばらく前から」持っているとBloombergのMark Gurman氏が語った。ただし一般向けの作業は進んでいない。11月2日の決算説明会でJohn Ternus氏も、根本的に違う変更は今…",
+   "image": "https://gori.me/uploads/2021/05/M1-iPad-Pro-2021-12_9inch-MIniLED-Review-14-800x533.jpg"
+  },
   {
    "url": "https://gori.me/apps/iphone-app-news/173091",
    "title": "1Password、バックエンドへの不正アクセスを公表。保管庫の中身は影響なし",
