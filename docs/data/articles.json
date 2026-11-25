@@ -1,6 +1,14 @@
 {
- "generated": "2026-11-25T18:45:11Z",
+ "generated": "2026-11-25T20:45:10Z",
  "articles": [
+  {
+   "url": "https://gori.me/apps/iphone-app-news/173091",
+   "title": "1Password、バックエンドへの不正アクセスを公表。保管庫の中身は影響なし",
+   "blog": "gorime",
+   "published": "2026-11-25T20:36:13Z",
+   "summary": "1Passwordが2026年11月25日付の公式ブログで、バックエンドシステムへの不正アクセスを公表した。顧客のアカウント情報の一部がコピーされたが、同社によると保管庫の中身と鍵は影響を受けていない。利用者がアカウントで更新する必要はなく…",
+   "image": "https://gori.me/uploads/2026/11/1795638836732-update-on-nov-2026-security-incident-800x450.jpeg"
+  },
   {
    "url": "https://conmeshi.com/post-287648/",
    "title": "７プレミアム 七宝麻辣湯監修 麻辣湯【セブンイレブン】シビカラ仕立ての美味しい麻辣湯です!!",
