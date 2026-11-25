@@ -1,6 +1,30 @@
 {
- "generated": "2026-11-25T21:45:12Z",
+ "generated": "2026-11-25T22:45:17Z",
  "articles": [
+  {
+   "url": "https://gori.me/facebook/facebook-news/173089",
+   "title": "Amazon、Meta「Muse」の締め出し解除を協議か",
+   "blog": "gorime",
+   "published": "2026-11-25T22:05:47Z",
+   "summary": "MetaのAIエージェント「Muse」は、ユーザーに代わって商品を探し、購入まで進める。Amazonは9月からMuseが店にアクセスできないようにしており、Fortuneは両社が直接つなぐ取引を協議していると関係者の話として報じた。争点は検…",
+   "image": "https://gori.me/uploads/2026/10/Muse-Jappan-Release-800x450.jpeg"
+  },
+  {
+   "url": "https://conmeshi.com/post-287696/",
+   "title": "チーズドッグ【セブンイレブン】シンプルで美味しいチーズドッグです!!",
+   "blog": "inukichi",
+   "published": "2026-11-25T22:00:00Z",
+   "summary": "【商品紹介】 セブンイレブンの商品「チーズドッグ」を食べてみました。 ジューシーなソーセージとチーズを組み合わせたチーズドッグです。 270円（税込291.60円） 2026年11月18日（水）以降順次発売 熱量：290 […]",
+   "image": "http://conmeshi.com/wp-content/uploads/2026/11/2026111628-1.jpg"
+  },
+  {
+   "url": "https://gori.me/it/173086",
+   "title": "ChatGPT、12月から通常チャットも共通枠で消費",
+   "blog": "gorime",
+   "published": "2026-11-25T21:55:09Z",
+   "summary": "OpenAIは12月から、ChatGPTのPlus・Pro・BusinessでChatGPTとCodexの利用枠を共通にし、通常のチャットもトークンで数える。Instantチャットは枠を消費しない。Plusで実際にどれだけ減るかは未公表で、…",
+   "image": "https://gori.me/uploads/2026/07/solen-feyissa-Aj7cDaR6QXs-unsplash-800x534.jpg"
+  },
   {
    "url": "https://gori.me/macosx/macosx-news/173092",
    "title": "macOSが動作するiPad「存在する」。ただし社内限定、一般向けの販売予定なし",
@@ -1632,14 +1656,6 @@
    "published": "2026-11-18T23:00:00Z",
    "summary": "MacRumorsによると「iPhone Air 2」は現行モデルと同じディスプレイの仕様を継続するそうです。 「iPhone Air 2」は同じディスプレイを継続か 韓国のETNewsが業界関係者の話として報じたところ... 投稿 「iP…",
    "image": "https://netaful.jp/wp-content/uploads/2025/09/Apple-iPhone-Air-profile-250909-485x347.jpg"
-  },
-  {
-   "url": "https://netaful.jp/iphone/0212869.html",
-   "title": "「iPhone Duo 2」はTouch IDを継続か｜Face IDの搭載は不透明に",
-   "blog": "netaful-apple",
-   "published": "2026-11-18T22:30:00Z",
-   "summary": "MacRumorsによると「iPhone Duo 2」は側面のTouch IDを継続し、Face IDの搭載は不透明だそうです。 「iPhone Duo 2」はTouch IDを継続か WeiboのリーカーDigital... 投稿 「iP…",
-   "image": "https://netaful.jp/wp-content/uploads/2026/09/Apple-iPhone-Duo-colors-260909-485x273.jpg"
   }
  ]
 }
