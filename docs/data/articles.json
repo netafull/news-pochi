@@ -1,6 +1,30 @@
 {
- "generated": "2026-11-25T09:45:19Z",
+ "generated": "2026-11-25T10:45:10Z",
  "articles": [
+  {
+   "url": "https://gori.me/apps/mac-app-news/173076",
+   "title": "Dockアイコンがリアルタイムで動くMacアプリ登場。Finderの顔やAIの使用量も",
+   "blog": "gorime",
+   "published": "2026-11-25T10:30:22Z",
+   "summary": "Macのアプリのアイコンを作り替える「IconSwapper」が11月17日に発売。19ドルの買い切りで、ChatGPTやClaudeの使用量をDockに表示できる。一方でアプリを常駐させる必要があり、MacGenerationの試用ではメ…",
+   "image": "https://gori.me/uploads/2026/11/1795587473277-IconSwapper-dl-800x499.jpg"
+  },
+  {
+   "url": "https://taisy0.com/2026/11/25/230901.html",
+   "title": "｢ATOK｣がAI言語モデルを取り入れた新変換エンジンを搭載へ——2027年2月よりWindows向けに提供開始",
+   "blog": "taisy0",
+   "published": "2026-11-25T09:57:37Z",
+   "summary": "本日、ジャストシステムが、常に最新の日本語入力システムを利用できる「ATOK Passport」において、AI言語モデル（LLM）を取り入れた新変換エンジン「ATOKインテグレーションエンジン」を搭載し、2027年2月1 […]",
+   "image": "https://taisy0.com/wp-content/uploads/2026/11/atokllm.jpg"
+  },
+  {
+   "url": "https://www.macotakara.jp/software/entry-52439.html",
+   "title": "Robbie Tilton、手作業でもAIエージェントでも作業できるMac用動画編集ソフトウェア「Editroom for Mac」をリリース",
+   "blog": "macotakara",
+   "published": "2026-11-25T09:53:12Z",
+   "summary": "Editroom for Mac 元AppleのApple Vision Proヒューマン・インターフェース・デザイナーRobbie Tilton氏が、手作業でもAIエージェントでもカット編集できるMac用動画編集ソフトウェア「Editro…",
+   "image": "https://www.macotakara.jp/archives/001/202611/fb81de7939dd9a17.jpg"
+  },
   {
    "url": "https://shingekifood.com/entry/2026/11/25/183602",
    "title": "丸亀製麺のカツ丼が売り切れ！数量限定でランチ後には完売、夜はほぼ食べられない幻の激レアメニュー",
