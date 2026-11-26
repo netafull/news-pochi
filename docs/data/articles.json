@@ -1,6 +1,38 @@
 {
- "generated": "2026-11-26T19:45:16Z",
+ "generated": "2026-11-26T22:45:12Z",
  "articles": [
+  {
+   "url": "https://netaful.jp/iphone/0216197.html",
+   "title": "「iOS 28」でiPhoneの通知システムが刷新か｜通知センターに大きな変更、広告通知の仕分けにも期待",
+   "blog": "netaful-apple",
+   "published": "2026-11-26T22:15:00Z",
+   "summary": "MacRumorsによると、Appleは来年の「iOS 28」でiPhoneの通知システムを刷新する計画だといいます。 iOS 28で通知センターに大きな変更か 複数の情報源によると「iOS 28」では通知センターに大き... 投稿 「iO…",
+   "image": "https://netaful.jp/wp-content/uploads/2026/06/ios-28-485x292.jpg"
+  },
+  {
+   "url": "https://gori.me/apps/iphone-app-news/173115",
+   "title": "Apple、月間1,100万人のAIアプリTalkieを削除",
+   "blog": "gorime",
+   "published": "2026-11-26T22:00:00Z",
+   "summary": "Appleが今週、上海拠点のMiniMaxが開発したAIチャットアプリ「Talkie」をApp Storeから全世界で削除した。月間利用者は約1,100万人で、子どもに性的なメッセージを送っていたとの報道を受けた対応。Google Play…",
+   "image": "https://gori.me/uploads/2026/11/1795720828624-Talkie-Google-Play-800x656.jpg"
+  },
+  {
+   "url": "https://conmeshi.com/post-287690/",
+   "title": "北海道産きたあかり使用ハムポテトロール【セブンイレブン】シンプルながら美味しいロールパンです!!",
+   "blog": "inukichi",
+   "published": "2026-11-26T22:00:00Z",
+   "summary": "【商品紹介】 セブンイレブンの商品「北海道産きたあかり使用ハムポテトロール」を食べてみました。 北海道産きたあかりを使用したハムポテトサラダをコッペパンに挟みました。 148円（税込159.84円） 2026年11月18 […]",
+   "image": "http://conmeshi.com/wp-content/uploads/2026/11/2026112368-4.jpg"
+  },
+  {
+   "url": "https://gori.me/apps/iphone-app-news/173119",
+   "title": "1Password 7、2027年5月に会員アカウントの同期が止まる。独立した保管庫は動くが保証なし",
+   "blog": "gorime",
+   "published": "2026-11-26T21:45:42Z",
+   "summary": "1Passwordが旧版「1Password 7」の廃止を進めており、2027年5月から会員アカウントの変更を同期しなくなる。8へは追加料金なしで移れ、独立した保管庫は5月の期限の対象外だ。不正アクセス直後で不安な人に向け、移行先と確認点、…",
+   "image": "https://gori.me/uploads/2026/11/1795722482508-1Password-8-is-the-newest-version-800x541.jpg"
+  },
   {
    "url": "https://iphone-mania.jp/apple-609259/",
    "title": "同じ番号で2台のiPhoneは日本で使える？iPhone Handoffの現在地",
@@ -2000,14 +2032,6 @@
    "published": "2026-11-19T23:30:00Z",
    "summary": "MacRumorsによると、Appleはアプリの操作やコーディング、Webの閲覧などをこなすAIエージェントを開発していることが明らかになりました。 Appleが「コンピューターを使える」AIエージェントを開発中 手がか... 投稿 App…",
    "image": "https://netaful.jp/wp-content/uploads/2024/10/Apple-Intelligence-hero-485x273.jpg"
-  },
-  {
-   "url": "https://netaful.jp/mac/0212957.html",
-   "title": "「iMac」のOLEDモデルが中止・延期の可能性｜コスト高と需要不足で",
-   "blog": "netaful-apple",
-   "published": "2026-11-19T22:30:00Z",
-   "summary": "MacRumorsによると、AppleはOLEDディスプレイを搭載する「iMac」の開発について、延期や中止を検討しています。 OLED版「iMac」に中止・延期の可能性 韓国のThe Elecによると、AppleはSa... 投稿 「iM…",
-   "image": "https://netaful.jp/wp-content/uploads/2024/10/Apple-iMac-M4-hero-485x273.jpg"
   }
  ]
 }
