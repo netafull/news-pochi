@@ -1,6 +1,14 @@
 {
- "generated": "2026-11-26T04:45:18Z",
+ "generated": "2026-11-26T05:45:11Z",
  "articles": [
+  {
+   "url": "https://gori.me/iphone/iphone-news/173098",
+   "title": "iPhoneのSafariは初期60Hz。機能フラグを切れば120Hzにできるって知ってた？",
+   "blog": "gorime",
+   "published": "2026-11-26T05:20:47Z",
+   "summary": "iPhoneのSafariは、120Hz対応の画面でもJavaScriptで描く動きとタッチ入力を初期状態で毎秒60回に抑えている。僕のiPhoneとMacでも60と出たが、機能フラグをオフにするとSafariは120Hzになった。iPho…",
+   "image": "https://gori.me/uploads/2026/11/1795641054855-Safari-FPS-Rendering-test-800x450.jpg"
+  },
   {
    "url": "https://taisy0.com/2026/11/26/230944.html",
    "title": "Apple、インドでは7店舗目となる新しい直営店｢Apple Kukatpally｣を12月10日にオープンへ——オリジナル壁紙も配布中",
